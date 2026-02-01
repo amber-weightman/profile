@@ -61,7 +61,8 @@ html {
 body {
   font-family: var(--font-sans);
   line-height: 1.6;
-  color: var(--color-text);
+  /* color: var(--color-text); */
+  color: var(--color-text-muted);
   background: linear-gradient(
     135deg,
     var(--color-primary) 0%,
@@ -110,7 +111,7 @@ h1 {
 
 .tagline {
   font-style: italic;
-  color: #666;
+  color: var(--color-text-muted);
   margin-bottom: var(--space-lg);
   display: block;
 }
@@ -118,13 +119,14 @@ h1 {
 .intro {
   margin-bottom: var(--space-lg);
   font-size: var(--text-base);
-  color: var(--color-text-light);
+  /* color: var(--color-text-light); */
+  color: var(--color-text-muted);
   line-height: 1.8;
 }
 
 /* Links Section */
 .links {
-  margin: var(--space-lg) 0;
+  margin: var(--space-2xl) 0;
 }
 
 .link-item {
@@ -163,6 +165,20 @@ h1 {
   flex-shrink: 0;
 }
 
+.status-pill {
+  display: inline-block;
+  font-size: 0.6em;
+  font-weight: 600;
+  padding: 0.3em 0.65em;
+  border-radius: 12px;
+  background: rgba(184, 131, 109, 0.2);
+  color: var(--color-secondary);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  margin-left: 0.5rem;
+  vertical-align: middle;
+}
+
 .coming-soon {
   color: var(--color-text-disabled);
   font-weight: 500;
@@ -187,7 +203,7 @@ h1 {
 .contact h2 {
   font-size: var(--text-lg);
   margin-bottom: var(--space-md);
-  color: var(--color-text);
+  color: var(--color-secondary);
 }
 
 .contact a {
