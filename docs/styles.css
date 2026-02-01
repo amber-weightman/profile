@@ -1,13 +1,13 @@
 /* CSS Variables */
 :root {
   /* Colors */
-  --color-primary: #667eea;
-  --color-secondary: #764ba2;
+  --color-primary: #6b7b5f;
+  --color-secondary: #b8836d;
   --color-text: #333;
   --color-text-light: #555;
   --color-text-muted: #777;
   --color-text-disabled: #999;
-  --color-background: #ffffff;
+  --color-background: #f5f3ed;
   --color-border: #eee;
 
   /* Spacing */
@@ -38,7 +38,7 @@
     --color-text: #f0f0f0;
     --color-text-light: #d0d0d0;
     --color-text-muted: #a0a0a0;
-    --color-background: #1a1a1a;
+    --color-background: #1a1c18;
     --color-border: #333;
   }
 }
@@ -128,18 +128,10 @@ h1 {
 }
 
 .link-item {
-  margin-bottom: var(--space-md);
+  margin-bottom: var(--space-lg);
   display: flex;
-  align-items: baseline;
-  flex-wrap: wrap;
-}
-
-.link-item::before {
-  content: "→";
-  margin-right: var(--space-xs);
-  color: var(--color-primary);
-  font-weight: bold;
-  flex-shrink: 0;
+  flex-direction: column;
+  gap: 0.375rem;
 }
 
 .link-item a {
@@ -150,6 +142,7 @@ h1 {
   display: inline-flex;
   align-items: center;
   gap: 0.5rem;
+  font-size: var(--text-base);
 }
 
 .link-item a:hover {
@@ -178,7 +171,10 @@ h1 {
 
 .link-description {
   color: var(--color-text-muted);
-  margin-left: var(--space-xs);
+  font-size: 0.95em;
+  line-height: 1.5;
+  display: block;
+  padding-left: 1.9rem;
 }
 
 /* Contact Section */
@@ -224,6 +220,10 @@ h1 {
 
   .intro {
     font-size: 1em;
+  }
+
+  .link-description {
+    padding-left: 0;
   }
 }
 
