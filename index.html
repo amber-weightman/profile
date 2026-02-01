@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Amber Weightman</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 700px;
+            background: white;
+            padding: 60px 40px;
+            border-radius: 10px;
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+        }
+
+        .intro {
+            margin-bottom: 30px;
+            font-size: 1.1em;
+            color: #555;
+            line-height: 1.8;
+        }
+
+        h1 {
+            font-size: 2em;
+            margin-bottom: 20px;
+            color: #667eea;
+        }
+
+        .tagline {
+            font-style: italic;
+            color: #666;
+            margin-bottom: 30px;
+        }
+
+        .links {
+            margin: 30px 0;
+        }
+
+        .links h2 {
+            font-size: 1.3em;
+            margin-bottom: 20px;
+            color: #333;
+        }
+
+        .link-item {
+            margin-bottom: 15px;
+            display: flex;
+            align-items: baseline;
+        }
+
+        .link-item::before {
+            content: "→";
+            margin-right: 10px;
+            color: #667eea;
+            font-weight: bold;
+        }
+
+        .link-item a {
+            color: #667eea;
+            text-decoration: none;
+            font-weight: 500;
+            transition: color 0.3s ease;
+        }
+
+        .link-item a:hover {
+            color: #764ba2;
+            text-decoration: underline;
+        }
+
+        .link-description {
+            color: #777;
+            margin-left: 5px;
+        }
+
+        .contact {
+            margin-top: 40px;
+            padding-top: 30px;
+            border-top: 1px solid #eee;
+        }
+
+        .contact h2 {
+            font-size: 1.3em;
+            margin-bottom: 15px;
+            color: #333;
+        }
+
+        .contact a {
+            color: #667eea;
+            text-decoration: none;
+            font-weight: 500;
+        }
+
+        .contact a:hover {
+            text-decoration: underline;
+        }
+
+        @media (max-width: 600px) {
+            .container {
+                padding: 40px 25px;
+            }
+
+            h1 {
+                font-size: 1.6em;
+            }
+
+            .intro {
+                font-size: 1em;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <p class="tagline">We all live multiple lives, in parallel behind many different faces.</p>
+        
+        <h1>Hi, I'm Amber</h1>
+        
+        <p class="intro">
+            and some of my lives converge here.
+        </p>
+
+        <div class="links">
+            <div class="link-item">
+                <a href="https://www.linkedin.com/in/amber-weightman/" target="_blank">LinkedIn</a>
+                <span class="link-description">- professional profile - tech leadership and DEIB advocacy</span>
+            </div>
+            
+            <div class="link-item">
+                <a href="#" onclick="alert('Coming soon!'); return false;">Collab Guide</a>
+                <span class="link-description">- blog (coming soon) - tips, tricks and insights for collaborative teams, where everybody belongs</span>
+            </div>
+            
+            <div class="link-item">
+                <a href="https://substack.com/@amberweightman" target="_blank">Substack</a>
+                <span class="link-description">- musings, behind the mask</span>
+            </div>
+        </div>
+
+        <div class="contact">
+            <h2>Contact me:</h2>
+            <p>Reach out to me on <a href="https://www.linkedin.com/in/amber-weightman/" target="_blank">LinkedIn</a></p>
+        </div>
+    </div>
+</body>
+</html>
